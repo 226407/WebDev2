@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <!--Version 5.0
         Name: Edward Wendt
         Date Completed:2/11/20
     -->
 
 <head>
+    
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,6 +58,7 @@
 
 <body>
 
+    
 
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
@@ -92,105 +95,110 @@
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 
+        <div class="row">
+            <div class="col-lg-6">
 
-        <center>
-            <!--Button 1-->
-            <p id="textChange"> My name is Edward</p>
-        </center>
-        <button type="button" onclick="changeText()">Click if you like</button>
+                <!--Button 1-->
+                <p id="textChange"> My name is Edward</p>
 
-
-        <center>
-            <!--Button 2-->
-            <p id="textAppear"> </p>
-        </center>
-        <button type="button" onclick="appearText()">Click to have text appear</button>
-
-
-        <h3 onmouseover="style.color='blue'" onmouseout="style.color='red'">Mouse or Hover over this text for color change</h3>
-
-        <script>
-            function myFunction() {
-                document.getElementById("dub").innerHTML = "Ay";
-            }
-
-        </script>
-
-        <center>
+                <button type="button" onclick="changeText()">Click if you like</button>
 
 
 
-            <body>
+                <!--Button 2-->
+                <p id="textAppear"> </p>
 
-                <div onmousedown="WhichButton(event);">Click this to find out how many Dodo birds are still left
-                    <p>
-
-
-
-                </div>
-        </center>
-        <script>
-            function myFunction() {
-                document.getElementById("demo").innerHTML = "Quality Job";
-            }
-
-        </script>
-        </head>
-
-        <body>
-
-            Type than select the text --> <input type="text" value="" onselect="myFunction()">
-
-            <p id="demo"></p>
-        </body>
+            
+    
+    <button type="button" onclick="appearText()">Click to have text appear</button>
 
 
+                <h3 onmouseover="style.color='blue'" onmouseout="style.color='red'">Mouse or Hover over this text for color change</h3>
 
-        <center>
-
-            <head>
                 <script>
-                    function show_coords(event) {
-                        document.getElementById("cord").innerHTML = "X= " + event.clientX + "<br>Y= " + event.clientY;
+                    function myFunction() {
+                        document.getElementById("dub").innerHTML = "Ay";
                     }
 
                 </script>
-            </head>
-
-            <body>
-
-                <p onmousedown="show_coords(event)">
-                    Click this text to see mouse pointer coordinates.</p>
-
-                <p id="cord"></p>
-
-            </body>
-            <script>
-                function myFunction1() {
-                    document.getElementById("ranint").innerHTML = Math.floor(Math.random() * 1001);
-                }
-
-            </script>
-        </center>
-
-        <body>
-
-
-            <button onclick="myFunction1()">Random Number Generator 0 to 1000</button>
-
-            <p id="ranint"></p>
-            <script>
-                function WhichButton(event) {
-                    alert(event.button)
-                }
-
-            </script>
-        </body>
 
 
 
 
-        </center>
+
+                <body>
+
+                    <div onmousedown="WhichButton(event);">Click this to find out how many Dodo birds are still left
+                        <p>
+
+
+
+                    </div>
+
+                    <script>
+                        function myFunction() {
+                            document.getElementById("txtselect").innerHTML = "Quality Job";
+                        }
+
+                    </script>
+                    </head>
+
+                    <body>
+
+                        Type than select the text --> <input type="text" value="" onselect="myFunction()">
+
+                        <p id="txtselect"></p>
+                    </body>
+
+
+
+
+
+                    <head>
+                        <script>
+                            function show_coords(event) {
+                                document.getElementById("cord").innerHTML = "X= " + event.clientX + "<br>Y= " + event.clientY;
+                            }
+
+                        </script>
+                    </head>
+
+                    <body>
+
+                        <p onmousedown="show_coords(event)">
+                            Click this text to see mouse pointer coordinates.</p>
+
+                        <p id="cord"></p>
+
+                    </body>
+                    <script>
+                        function myFunction1() {
+                            document.getElementById("ranint").innerHTML = Math.floor(Math.random() * 1001);
+                        }
+
+                    </script>
+
+
+                    <body>
+
+
+                        <button onclick="myFunction1()">Random Number Generator 0 to 1000</button>
+
+                        <p id="ranint"></p>
+                        <script>
+                            function WhichButton(event) {
+                                alert(event.button)
+                            }
+
+                        </script>
+                    </body>
+
+
+
+
+                    </center>
+            </div>
+        </div>
     </div>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
@@ -198,7 +206,7 @@
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
         <p>
-            Cool <a href="coollink.html" target="_blank">Link</a>
+            Click this cool little  <a href="coollink.html" target="_blank">Link</a>
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
