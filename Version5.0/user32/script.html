@@ -7,7 +7,7 @@
     -->
 
 <head>
-    
+
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,7 +58,7 @@
 
 <body>
 
-    
+
 
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
@@ -108,9 +108,9 @@
                 <!--Button 2-->
                 <p id="textAppear"> </p>
 
-            
-    
-    <button type="button" onclick="appearText()">Click to have text appear</button>
+
+
+                <button type="button" onclick="appearText()">Click to have text appear</button>
 
 
                 <h3 onmouseover="style.color='blue'" onmouseout="style.color='red'">Mouse or Hover over this text for color change</h3>
@@ -193,10 +193,42 @@
                         </script>
                     </body>
 
+                    <head>
+                        <script>
+                            function myFunction11(elmnt, clr) {
+                                elmnt.style.color = clr;
+                            }
+
+                        </script>
+                    </head>
+
+                    <body>
+
+                        <p onmousedown="myFunction11(this,'yellow')" onmouseup="myFunction11(this,'green')">
+                            Click the text to change the color
+                        </p>
+
+                    </body>
+
+                    <head>
+                        <script>
+                            function myFunctionT() {
+                                var x = document.getElementById("fname");
+                                x.value = x.value.toUpperCase();
+                            }
+
+                        </script>
+                    </head>
+
+                    <body>
+
+                        Enter text here --> <input type="text" id="fname" onblur="myFunctionT()">
+
+                        <p>Type in above to turn text to uppercase letters</p>
+
+                    </body>
 
 
-
-                    </center>
             </div>
         </div>
     </div>
@@ -206,7 +238,7 @@
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
         <p>
-            Click this cool little  <a href="coollink.html" target="_blank">Link</a>
+            Click this cool little <a href="coollink.html" target="_blank">Link</a>
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
