@@ -1,18 +1,37 @@
-<html lang="en">
-    <!--Version 6.0 
-	Name:
-	Date Completed:
-    -->
-    <head>
-        
-        <title>Web Development User #32</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #32</center>
-    
-    </body>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        .first {
+            font-weight: bold;
+        }
+
+    </style>
+
+    <script>
+        $(function() {
+            $('li:first-child').addClass('first');
+        });
+
+
+        //$(document).ready(function() {                            This is the same as the one above
+            //$('li:first-child').addClass('first');                just a differnt way to write it
+        //});
+
+    </script>
+
+</head>
+
+<body>
+
+    <ul>
+        <li>This text is here</li>
+        <li>line under it</li>
+    </ul>
+
+</body>
 
 </html>
