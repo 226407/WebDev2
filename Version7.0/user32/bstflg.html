@@ -8,7 +8,7 @@
 
 <head>
     <link rel="icon" type="image/png" sizes="32x32" href="images/un-fav.png">
-
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,29 +80,102 @@
 
     <div class="wideMargin" id="content">
 
-        <h1 class="text-left my-3">About Flags</h1><!-- Edit this line for the title of your page -->
+        <h1>Best Flags</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Content ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 
         <div>
-            <p>
-                A flag is piece of fabric made up of shapes colors and symbols in different sizes most often representing an organization or country.
-                While flags have been used globally the most known versions of flags come from Europe.
-                These flags below are from differnt continents and organizations as seen below a flags ratio is often slightly different than each other
-            </p>
-            <img src="images/flag-belg.png" alt="Picture Belgium Flag" width="15%" height="15%" />
-            <img src="images/flag-braz.png" alt="Picture Brazil Flag" width="15%" height="15%" />
-            <img src="images/flag-sout.png" alt="Picture South Africa Flag" width="15%" height="15%" />
-            <img src="images/flag-nort.png" alt="Picture North Korean Flag" width="15%" height="15%" />
-            <img src="images/flag-eu.png" alt="Picture EU Flag" width="15%" height="15%" />
-            <p>
-                Flags are most known for their use in representing a political state all across history politically and in conflict.
-                These images below are of a map with the flags from modern day Africa Asia Europe and Oceania.
-            </p>
-            <img src="images/africa-flags.png" alt="Europe Flag Map" width="40%" height="40%" />
-            <img src="images/asia-flags.png" alt="Europe Flag Map" width="40%" height="40%" />
-            <img src="images/europe-flags.png" alt="Europe Flag Map" width="40%" height="40%" />
-            <img src="images/oceania-flags.png" alt="Europe Flag Map" width="40%" height="40%" />
+            <center>
+                <p>
+                    Now in the end I want to go through what I think are the best country flags for their look/design.
+                </p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Flag Use</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Nepal</td>
+                        <td>Modern</td>
+                    </tr>
+                    <tr>
+                        <td style="color:white; background-color:grey;">2</td>
+                        <td style="color:white; background-color:grey;">United Kingdom</td>
+                        <td style="color:white; background-color:grey;">Modern</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Japanes Empire</td>
+                        <td>1900s</td>
+                    </tr>
+                    <tr>
+                        <td style="color:white; background-color:grey;">4</td>
+                        <td style="color:white; background-color:grey;">Prussia</td>
+                        <td style="color:white; background-color:grey;">1800s</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>First United States</td>
+                        <td>1700s</td>
+                    </tr>
+                </table>
+                <img src="images/flag-nepa.svg" alt="Picture Nepal Flag" width="12%" height="12%" />
+                <img src="images/flag-unit.png" alt="Picture United Kingdom Flag" width="15%" height="15%" />
+                <img src="images/war-flag-japa.png" alt="Picture Japanes Empire Flag" width="15%" height="15%" />
+                <img src="images/his-flag-prus.png" alt="Picture Prussia Flag" width="15%" height="15%" />
+                <img src="images/flag-first-usa.png" alt="Picture of First United States Flag" width="15%" height="15%" />
+                <p>
+                    Some possible questions.
+                </p>
+
+                <head>
+                    <meta charset=utf-8>
+                    <title></title>
+                    <link rel="stylesheet" href="style.css">
+                </head>
+
+                <body>
+
+                    <dl>
+                        <dt>Newest national flag</dt>
+                        <dd>Mauritnia</dd>
+                        <dt>Most common flag colors</dt>
+                        <dd>Red than White than Blue</dd>
+                        <dt>Most common flag color combination</dt>
+                        <dd>Red White and Blue</dd>
+                        <dt>Rarest flag color</dt>
+                        <dd>Purple</dd>
+                        <dt>Most common flag aspect ratio</dt>
+                        <dd>2:3 then 1:5</dd>
+                    </dl>
+
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+                    <script>
+                        (function() {
+
+                            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+                            $('dl').on('mouseenter', 'dt', function() {
+                                $(this)
+                                    .next()
+                                    .slideDown(200)
+                                    .siblings('dd')
+                                    .slideUp(200);
+                            });
+                        })();
+
+                    </script>
+
+                </body>
+
+            </center>
         </div>
 
     </div>

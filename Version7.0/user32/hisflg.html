@@ -42,6 +42,12 @@
             text-align: center;
         }
 
+        .test {
+            font-size: 25px;
+            color: green;
+            border-bottom 2px;
+        }
+
     </style>
 </head>
 
@@ -80,30 +86,38 @@
 
     <div class="wideMargin" id="content">
 
-        <h1 class="text-left my-3">About Flags</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">Historical Flags</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Content ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 
-        <div>
+        <div class="form-group">
             <p>
-                A flag is piece of fabric made up of shapes colors and symbols in different sizes most often representing an organization or country.
-                While flags have been used globally the most known versions of flags come from Europe.
-                These flags below are from differnt continents and organizations as seen below a flags ratio is often slightly different than each other
+                The use and practice of flying flags as fabric first came into use in the 17th century.
             </p>
-            <img src="images/flag-belg.png" alt="Picture Belgium Flag" width="15%" height="15%" />
-            <img src="images/flag-braz.png" alt="Picture Brazil Flag" width="15%" height="15%" />
-            <img src="images/flag-sout.png" alt="Picture South Africa Flag" width="15%" height="15%" />
-            <img src="images/flag-nort.png" alt="Picture North Korean Flag" width="15%" height="15%" />
-            <img src="images/flag-eu.png" alt="Picture EU Flag" width="15%" height="15%" />
-            <p>
-                Flags are most known for their use in representing a political state all across history politically and in conflict.
-                These images below are of a map with the flags from modern day Africa Asia Europe and Oceania.
-            </p>
-            <img src="images/africa-flags.png" alt="Europe Flag Map" width="40%" height="40%" />
-            <img src="images/asia-flags.png" alt="Europe Flag Map" width="40%" height="40%" />
-            <img src="images/europe-flags.png" alt="Europe Flag Map" width="40%" height="40%" />
-            <img src="images/oceania-flags.png" alt="Europe Flag Map" width="40%" height="40%" />
+
+            <head>
+                <script>
+                    function test() {
+                        document.getElementById("tst").innerHTML = "These flags below in order are 1700s Thirteen Colonies - 1800s Prussia - late 1800s Qing China";
+                    }
+
+                </script>
+            </head>
+
+            <body>
+
+                <button onclick="test()">Historical Flags Examples</button>
+
+                <p id="tst"></p>
+
+            </body>
+
         </div>
+
+        <img src="images/his-flag-guf.png" alt="Picture Thirteen Colonies Flag" width="15%" height="15%" /> <! guf means grand union flag>
+        <img src="images/his-flag-prus.png" alt="Picture Prussia Flag" width="15%" height="15%" />
+        <img src="images/his-flag-qing.png" alt="Picture Qing China Flag" width="15%" height="15%" />
+
 
     </div>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Content ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
