@@ -3,6 +3,16 @@ $apiKey = "33fa10978298dc493058b804c5d42c20"; //You will need to add in the
 $cityId = "5046997"; //5046997 Shakopee City Id
 $units = "imperial";//metric-Celcius  imperial-Farhenheit
 $num = 0;
+$x = 1;
+
+
+if ($x < 5){
+    $color = 'blue';
+}
+else {
+    $color = 'red';
+}
+
 if ($num > 0){//Changes the $temp varaible to match 
     $temp = "F";
 }
@@ -31,7 +41,7 @@ $currentTime = time();
 <html>
 <head>
 <title>Forecast Weather using OpenWeatherMap with PHP</title>
-<h1> dwa </h1>
+<h1 style="color:<?php echo $color ?>;">dwa</h1>
 
 <style>
 body {
