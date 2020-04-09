@@ -142,27 +142,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <body>
     <div class="menu">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="index.html" class="navbar-brand">Oceanic Zones</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Menu Items ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                        <a href="SunlightZone.html" class="nav-item nav-link active">Sunlight Zone</a>
+                        <a href="TwilightZone.html" class="nav-item nav-link active">Twilight Zone</a>
+                        <a href="MidnightZone.html" class="nav-item nav-link active">Midnight Zone</a>
+                        <a href="AbyssalZone.html" class="nav-item nav-link active">Abyssal Zone</a>
+                        <a href="HadalZone.html" class="nav-item nav-link active">Hadal Zone</a>
+                        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Menu Items ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="login.php" class="nav-item nav-link active">Login</a> <!Remember Login.html if goes other  goes bad>
+                        <a href="register.php" class="nav-item nav-link active">Sign Up</a>
+                    </div>
                 </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="login.php" class="nav-item nav-link">Login</a>
-                </div>
-            </div>
-        </nav>
+            </nav>
     </div>
 
     <div class="wrapper">
@@ -188,7 +189,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-default" value="Reset">
             </div>
-            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+
         </form>
     </div>
 </body>

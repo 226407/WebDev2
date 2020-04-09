@@ -141,6 +141,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
                 <div class="navbar-nav ml-auto">
                     <a href="login.php" class="nav-item nav-link active">Login</a>
+                    <a href="register.php" class="nav-item nav-link active">Sign Up</a>
                 </div>
             </div>
         </nav>
