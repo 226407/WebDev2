@@ -80,6 +80,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <div class="page-header">
         <h1>Hello <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> welcome to the Oceanic Zones website.</h1>
     </div>
+    <img src="images/Welcom_Page1.jpg" alt="Picture of Oceanic Zones" height="35%" width="35%">
 
 </body>
 
